@@ -2,7 +2,10 @@
 module.exports = {
   content: ["./src/**/*.{html,js}", "./views/*.pug"],
   theme: {
-    extend: {},
+    fontFamily: {
+      body: ["Montserrat", "sans-serif"],
+      sans: ["Montserrat", "sans-serif"],
+    },
   },
   plugins: [],
 };
