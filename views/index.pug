@@ -1,4 +1,26 @@
 extends layout
 
 block content
-  p homepage
+  .flex.justify-center.items-center.relative.welcome-screen(class="md:px-16 md:flex-row max-md:flex-col-reverse md:justify-between")
+    div
+      h1.text-4xl.mb-2 Car Repair Service
+      p.text-sm Professional car tunning, repair and maintenance
+    img(src="1.png", alt="", class="md:w-5/12 max-md:w-8/12 max-md:mb-4")
+    p.absolute.bottom-4.left-0
+      some street, Lviv, Ukraine
+  
+  .h-screen
+    .py-16.grid.grid-cols-3.gap-8.h-full
+      div
+        h1.text-4xl.mb-2 Services
+        p.text-sm Professional car tunning, repair and maintenance
+        ul.mt-2
+          li Brakes
+          li Oil Changes
+          li Engines
+          li Transmissions
+          li Electrical
+          li Diagnostic
+      div.bg-cover.bg-center(style=`background-image: url('2.jpg')`)
+      div.flex.flex-col.justify-center
+        h1.text-4xl.mb-2 Visit Instagram

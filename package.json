@@ -2,7 +2,7 @@
   "scripts": {
     "tailwind:css": "postcss ./src/css/app.css -o public/styles/app.css",
     "tailwind:watch": "npx tailwindcss -i ./src/css/app.css -o public/styles/app.css --watch",
-    "dev": "nodemon src/index.js && tailwind:watch"
+    "dev": "nodemon src/index.js"
   },
   "dependencies": {
     "autoprefixer": "^10.4.16",
