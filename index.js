@@ -3,7 +3,7 @@ const path = require("path");
 const pug = require("pug");
 const compression = require("compression");
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3333;
 const app = express();
 
 app.set("views", path.join(__dirname, "views"));
