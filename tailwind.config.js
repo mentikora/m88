@@ -1,10 +1,20 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{html,js}", "./views/*.pug"],
+export default {
+  content: ["./index.html"],
   theme: {
-    fontFamily: {
-      body: ["Montserrat", "sans-serif"],
-      sans: ["Montserrat", "sans-serif"],
+    extend: {
+      fontFamily: {
+        lato: ["Bebas Neue", "sans-serif"],
+      },
+      aspectRatio: {
+        "9/16": "9 / 16",
+      },
+      colors: {
+        primary: "#ED1C24",
+      },
+      container: {
+        center: true,
+      },
     },
   },
   plugins: [],

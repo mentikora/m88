@@ -1,24 +1,19 @@
 {
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "tailwind:css": "postcss ./src/css/app.css -o public/styles/app.css",
-    "tailwind:watch": "npx tailwindcss -i ./src/css/app.css -o public/styles/app.css --watch",
-    "dev": "nodemon src/index.js"
-  },
-  "dependencies": {
-    "autoprefixer": "^10.4.16",
-    "compression": "^1.7.4",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "htmx.org": "^1.9.8",
-    "knex": "^3.0.1",
-    "postcss-cli": "^10.1.0",
-    "pug": "^3.0.2",
-    "sqlite3": "^5.1.6"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tailwind:minify": "npx tailwindcss -o public/build.css --minify"
   },
   "devDependencies": {
-    "cssnano": "^6.0.1",
-    "nodemon": "^3.0.1",
-    "tailwindcss": "^3.3.5"
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.5",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.4"
   }
 }
